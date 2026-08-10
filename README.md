@@ -42,31 +42,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `pystac-ext-version` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install pystac-ext-version
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install pystac-ext-version
 ```
 
-It is possible to list all of the versions of `pystac-ext-version` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add pystac-ext-version
+# for installing globally
+pixi global install pystac-ext-version
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `pystac-ext-version` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search pystac-ext-version --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search pystac-ext-version --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search pystac-ext-version --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -78,6 +120,8 @@ mamba repoquery whoneeds pystac-ext-version --channel conda-forge
 # List dependencies of `pystac-ext-version`:
 mamba repoquery depends pystac-ext-version --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
